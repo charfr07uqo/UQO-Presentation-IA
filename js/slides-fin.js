@@ -46,18 +46,75 @@ SLIDES_DATA.push(
     ]
   },
   {
-    "id": "labo",
+    "id": "labo-1-kiro-ext",
     "layout": "steps",
     "glow": ["2"],
     "section": "Laboratoire",
-    "tag": "Laboratoire",
-    "title": "🧪 Exercice / Laboratoire",
-    "subtitle": "Mise en pratique sur un vrai projet.",
+    "tag": "Laboratoire — Mise en place (1/5)",
+    "title": "🧪 Guide de mise en place (1/5)",
+    "subtitle": "Installation de Kiro et récupération des solutions.",
     "steps": [
-      { "title": "Obtenir la solution DosEtuAdmin-v2", "text": "Clonez le dépôt depuis votre gestionnaire de source." },
-      { "title": "Créer un workspace incluant SQL et DosEtuAdmin", "text": "Workspace multi-dossiers pour donner à l'IA le contexte complet." },
-      { "title": "Se créer une branche de travail", "text": "Branche Git dédiée pour tester librement." },
-      { "title": "Tester les prompts suggérés", "text": "Utilisez les prompts des diapositives suivantes." }
+      { "title": "Ouvrir Kiro et installer l'extension C#", "text": "Lancez Kiro et installez l'extension C# depuis le marketplace des extensions." },
+      { "title": "Cloner DosEtuAdmin-v2", "text": "<code>git clone https://dev.azure.com/uqo-sti/sti-devl/_git/DosEtuAdmin-v2</code><br>À mettre sous <code>C:\\Git\\DosEtu\\Web\\DosEtuAdmin-v2</code>" },
+      { "title": "Cloner DosEtuApi", "text": "<code>git clone https://dev.azure.com/partenariat-uqo-uqat-uqar/DosEtu/_git/DosEtuApi</code><br>À mettre sous <code>C:\\Git\\DosEtu\\WebApi\\DosEtuApi</code>" },
+      { "title": "Cloner DosEtu.Rapports", "text": "<code>git clone https://dev.azure.com/partenariat-uqo-uqat-uqar/DosEtu/_git/DosEtu.Rapports</code><br>À mettre sous <code>C:\\Git\\DosEtu\\Bibliotheques\\DosEtu.Rapports</code>" }
+    ]
+  },
+  {
+    "id": "labo-2-workspace",
+    "layout": "steps",
+    "glow": ["1"],
+    "section": "Laboratoire",
+    "tag": "Laboratoire — Mise en place (2/5)",
+    "title": "🧪 Guide de mise en place (2/5)",
+    "subtitle": "Configuration du workspace et de la branche.",
+    "steps": [
+      { "title": "Ouvrir DosEtuAdmin-v2 dans Kiro", "text": "Ouvrez Kiro et ouvrez le dossier <code>DosEtuAdmin-v2</code>." },
+      { "title": "Changer de branche", "text": "Passez à la branche <code>migration-tables-codes</code> pour DosEtuAdmin-v2." },
+      { "title": "Ajouter les dossiers au workspace", "text": "Ajoutez au workspace les dossiers <code>DosEtuApi</code>, <code>DosEtuAdmin</code> et <code>SQL</code>." },
+      { "title": "Renommer Local.props.template", "text": "Renommez <code>Local.props.template</code> en <code>Local.props</code>. Ce fichier indique qu'on veut utiliser la version locale de DosEtuApi plutôt que le package NuGet." }
+    ]
+  },
+  {
+    "id": "labo-3-nuget-partenariat",
+    "layout": "steps",
+    "glow": ["2"],
+    "section": "Laboratoire",
+    "tag": "Laboratoire — Mise en place (3/5)",
+    "title": "🧪 Guide de mise en place (3/5)",
+    "subtitle": "Configuration du feed NuGet du partenariat.",
+    "steps": [
+      { "title": "Créer un Personal Access Token (PAT)", "text": "Allez sur <code>dev.azure.com/partenariat-uqo-uqat-uqar</code> → User Settings → Personal Access Tokens. Créez un token avec la permission <code>Packaging (Read)</code>." },
+      { "title": "Configurer la source NuGet Partenariat", "text": "<code>dotnet nuget update source Partenariat --username ton@email.com --password &lt;PAT&gt; --store-password-in-clear-text</code>" }
+    ]
+  },
+  {
+    "id": "labo-4-nuget-telerik",
+    "layout": "steps",
+    "glow": ["1"],
+    "section": "Laboratoire",
+    "tag": "Laboratoire — Mise en place (4/5)",
+    "title": "🧪 Guide de mise en place (4/5)",
+    "subtitle": "Configuration du feed NuGet Telerik.",
+    "steps": [
+      { "title": "Récupérer les identifiants Telerik", "text": "Le compte et le mot de passe Telerik sont disponibles sur Password State." },
+      { "title": "Ajouter la source NuGet Telerik", "text": "<code>dotnet nuget add source \"https://nuget.telerik.com/v3/index.json\" --name \"Telerik\" --username \"ton-email@telerik.com\" --password \"ton-mot-de-passe\" --store-password-in-clear-text</code>" }
+    ]
+  },
+  {
+    "id": "labo-5-lancement",
+    "layout": "steps",
+    "glow": ["2"],
+    "section": "Laboratoire",
+    "tag": "Laboratoire — Mise en place (5/5)",
+    "title": "🧪 Guide de mise en place (5/5)",
+    "subtitle": "Dernières étapes avant de commencer.",
+    "steps": [
+      { "title": "Récupérer le appsettings", "text": "Obtenez le fichier <code>appsettings.development.json</code> requis pour le projet." },
+      { "title": "Faire confiance au certificat HTTPS local", "text": "<code>dotnet dev-certs https --trust</code><br>Génère et approuve un certificat de développement local pour que les appels HTTPS fonctionnent sans avertissement." },
+      { "title": "Lancer DosEtuApi", "text": "Essayez de lancer DosEtuApi pour valider que la configuration est fonctionnelle." },
+      { "title": "Compiler DosEtuAdmin-v2", "text": "Essayez de compiler DosEtuAdmin-v2 pour confirmer que tout est en place." },
+      { "title": "🎉 Prêt pour s'amuser !", "text": "Si tout compile et roule, vous êtes prêt pour le laboratoire. Passez aux prompts suggérés." }
     ]
   },
   {
