@@ -227,6 +227,12 @@ h3 { font-size: 2.2rem; font-weight: 600; margin-bottom: 14px; color: var(--prim
 .badge-success { background: rgba(88, 128, 93, 0.25); color: #7ab882; }
 .badge-danger  { background: rgba(237, 114, 101, 0.2); color: #ED7265; }
 
+[data-theme="light"] .badge-primary { background: rgba(0, 96, 133, 0.15); color: #004d6b; }
+[data-theme="light"] .badge-accent  { background: rgba(43, 204, 174, 0.15); color: #0a6e5c; }
+[data-theme="light"] .badge-warning { background: rgba(235, 199, 64, 0.18); color: #7a6200; }
+[data-theme="light"] .badge-success { background: rgba(88, 128, 93, 0.18); color: #2d5e33; }
+[data-theme="light"] .badge-danger  { background: rgba(237, 114, 101, 0.15); color: #b5342a; }
+
 /* ── Highlight box ── */
 .highlight-box {
     background: linear-gradient(135deg, rgba(0, 96, 133, 0.12), rgba(43, 204, 174, 0.08));
