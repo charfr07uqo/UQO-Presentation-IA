@@ -113,6 +113,24 @@ SLIDES_DATA.push(
     }
   },
   {
+    "id": "concept-skills-exemples",
+    "layout": "single-highlight",
+    "glow": ["2"],
+    "section": "Concepts IA",
+    "tag": "Concepts IA — Exemples Skills",
+    "title": "⚡ Exemples de skills",
+    "subtitle": "Des skills prêts à l'emploi, créés par Microsoft et la communauté.",
+    "box": {
+      "title": "📦 Agent Skills — Microsoft",
+      "text": "",
+      "badges": [
+        { "type": "primary", "text": "🟣 Claude Code · 🔵 Gemini CLI · 🟢 Codex CLI · 🩵 GitHub Copilot · 🟠 Cursor" },
+        { "type": "accent", "text": "Azure Functions, Container Apps, API Management, et plus<br><a href='https://github.com/MicrosoftDocs/Agent-Skills' target='_blank' style='color:var(--primary-light);font-size:0.85em'>github.com/MicrosoftDocs/Agent-Skills</a>" },
+        { "type": "warning", "text": "Standard ouvert SKILL.md — réutilisable dans vos propres projets<br><a href='https://agentskills.io/home' target='_blank' style='color:var(--primary-light);font-size:0.85em'>agentskills.io</a>" }
+      ]
+    }
+  },
+  {
     "id": "concept-mcp",
     "layout": "single-highlight",
     "glow": ["2"],
@@ -127,6 +145,24 @@ SLIDES_DATA.push(
         { "type": "primary", "text": "Connecte l'IA à des outils externes" },
         { "type": "accent", "text": "Standard ouvert et extensible" },
         { "type": "warning", "text": "Configurable par projet" }
+      ]
+    }
+  },
+  {
+    "id": "concept-mcp-exemples",
+    "layout": "single-highlight",
+    "glow": ["1"],
+    "section": "Concepts IA",
+    "tag": "Concepts IA — Exemples MCP",
+    "title": "🔌 Exemples de serveurs MCP",
+    "subtitle": "Des serveurs MCP concrets déjà disponibles pour vos outils.",
+    "box": {
+      "title": "🌐 Serveurs MCP populaires",
+      "text": "Plusieurs fournisseurs offrent déjà des serveurs MCP prêts à l'emploi. L'IA peut ainsi gérer vos ressources Azure, interagir avec Azure DevOps (repos, pipelines, work items), ou accéder à Jira et Confluence directement depuis votre IDE.",
+      "badges": [
+        { "type": "primary", "text": "☁️ Azure MCP Server — Gérer vos ressources Azure en langage naturel<br><a href='https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/' target='_blank' style='color:var(--primary-light);font-size:0.85em'>learn.microsoft.com/…/azure-mcp-server</a>" },
+        { "type": "accent", "text": "🔧 Azure DevOps MCP — Repos, pipelines, work items, wikis<br><a href='https://github.com/microsoft/azure-devops-mcp' target='_blank' style='color:var(--primary-light);font-size:0.85em'>github.com/microsoft/azure-devops-mcp</a>" },
+        { "type": "warning", "text": "📋 Atlassian Rovo MCP — Jira, Confluence, recherche Rovo<br><a href='https://www.atlassian.com/platform/remote-mcp-server' target='_blank' style='color:var(--primary-light);font-size:0.85em'>atlassian.com/platform/remote-mcp-server</a>" }
       ]
     }
   }

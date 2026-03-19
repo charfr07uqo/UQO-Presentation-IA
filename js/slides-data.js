@@ -35,7 +35,7 @@ var SLIDES_DATA = [
       "Comment bien prompter — Contexte et langage naturel",
       "Introduction à Kiro — IDE, interface, forces et limites",
       "Perspectives et questions",
-      "Démo de skills, exercice / laboratoire pratique et prompts suggérés"
+      "Démo de skills / DosEtuApi / DosEtuAdmin-v2 / Workflow avec IA"
     ]
   }
 ];

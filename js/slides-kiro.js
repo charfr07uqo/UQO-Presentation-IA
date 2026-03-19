@@ -93,8 +93,8 @@ SLIDES_DATA.push(
     "glow": ["1"],
     "section": "Kiro",
     "tag": "Kiro — Au-delà du quotidien",
-    "title": "<img src='icons/kiro.png' class='title-inline-icon'> Kiro, pas juste pour nos projets",
-    "subtitle": "L'IA intégrée à Kiro peut vous servir bien au-delà du développement de tous les jours.",
+    "title": "<img src='icons/kiro.png' class='title-inline-icon'> Kiro, pas juste qu'un codeur",
+    "subtitle": "Peut vous servir à coder, planifier, comprendre, créer des scripts, créer des présentations, etc.",
     "box": {
       "title": "🧰 Un assistant polyvalent",
       "text": "Kiro n'est pas limité à nos projets habituels. Vous pouvez l'utiliser pour construire une présentation web comme celle-ci, créer des scripts pour n'importe quel besoin, ou simplement poser des questions sur du code existant.",

@@ -19,11 +19,9 @@ SLIDES_DATA.push(
       { "type": "file", "name": "📄 guide-logging.md", "indent": 2 },
       { "type": "file", "name": "📄 guide-normes-visuelles.md", "indent": 2 },
       { "type": "file", "name": "📄 guide-patterns-blazor.md", "indent": 2 },
-      { "type": "file", "name": "📄 guide-rendu-dom-blazor.md", "indent": 2 },
       { "type": "folder", "name": "📂 skills/", "indent": 1 },
       { "type": "highlight", "name": "📄 analyser-solution", "indent": 2 },
       { "type": "highlight", "name": "📄 corriger-erreurs-build", "indent": 2 },
-      { "type": "highlight", "name": "📄 creer-nouvelle-page", "indent": 2 },
       { "type": "file", "name": "📄 creer-usecase", "indent": 2 },
       { "type": "file", "name": "📄 skill-creator", "indent": 2 },
       { "type": "folder", "name": "📂 verifications/", "indent": 1 },
@@ -32,9 +30,9 @@ SLIDES_DATA.push(
       { "type": "file", "name": "📄 verification-versions-nuget.md", "indent": 2 }
     ],
     "descriptions": [
-      { "title": "📋 Normes", "text": "Nos guides d'équipe : abréviations, commentaires, patterns Blazor, gestion d'exceptions, etc. L'IA les consulte automatiquement." },
+      { "title": "📋 Normes", "text": "Nos guides d'équipe : abréviations, commentaires, patterns Blazor, gestion d'exceptions, etc." },
       { "title": "⚡ Skills", "text": "Tâches automatisées maison : analyser une solution, corriger les erreurs de build, créer une nouvelle page selon nos conventions." },
-      { "title": "✅ Vérifications", "text": "Checklists exécutées par l'IA pour valider un écran, les appsettings ou les versions NuGet avant de livrer." }
+      { "title": "✅ Vérifications", "text": "Checklists qui peuvent être référencées pour l'IA, soit directement dans un prompt ou dans un skill." }
     ]
   },
   {
